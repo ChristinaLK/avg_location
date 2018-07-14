@@ -1,13 +1,13 @@
 library(dplyr)
 library(ggplot2)
 
-location_file <- 'data/locations.csv'
+location_file <- 'data/locations.tsv'
 locations <- read.delim(location_file)
 
 locations <- locations %>% mutate(TotalMonths = Years*12 + Months)
 
 remove_outliers <- TRUE
-cutoff <- 6
+cutoff <- 12
 if (remove_outliers) {
 locations <- locations %>% filter(TotalMonths > cutoff)
 }
