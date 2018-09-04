@@ -1,4 +1,4 @@
-#avg location
+# avg location
 
 For now, create an input file in the style of locations.tsv.  
 Can analyze using the python notebook or R script.  Both will 
